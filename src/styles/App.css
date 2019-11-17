@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  line-height: 1.5;
+  color: white;
+  background: steelblue;
+  scroll-behavior: smooth;
+  height: 100vh;
+  font-family: "Cutive Mono", monospace;
+  padding: 1rem; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+#task-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 0.5rem; }
+
+#task-section .add-task {
+  border: 2px solid white;
+  max-width: 800px;
+  margin: 0 auto 1rem auto;
+  padding: 1rem; }
+  #task-section .add-task .info {
+    margin-top: 1rem; }
+    #task-section .add-task .info .star {
+      color: gold; }
+    #task-section .add-task .info .trash {
+      color: lightcoral; }
+  #task-section .add-task form {
+    display: flex; }
+    #task-section .add-task form input {
+      flex-grow: 1;
+      padding: 0.5rem;
+      font-size: 1.15rem; }
+      #task-section .add-task form input:focus {
+        outline: none;
+        border: 2px solid royalblue; }
+    #task-section .add-task form button {
+      flex-basis: 20%;
+      padding: 0.5rem 1rem;
+      background: limegreen;
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s; }
+      #task-section .add-task form button:hover {
+        background-color: #2bdf2b;
+        transform: translateY(-8%); }
+
+#task-section .task-list {
+  border: 2px solid white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem; }
+  #task-section .task-list ul li {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    padding: 0.4rem 1rem;
+    background-color: #396991;
+    color: white;
+    display: flex;
+    align-items: center; }
+    #task-section .task-list ul li:hover {
+      background-color: #5698ce; }
+    #task-section .task-list ul li span {
+      flex-grow: 1;
+      cursor: pointer;
+      transition: 0.2s; }
+      #task-section .task-list ul li span:hover {
+        color: lime; }
+    #task-section .task-list ul li span.done {
+      color: lime;
+      text-decoration: line-through;
+      font-weight: lighter !important; }
+    #task-section .task-list ul li i {
+      flex-basis: 5%;
+      text-align: center;
+      cursor: pointer; }
+    #task-section .task-list ul li .star:hover {
+      color: gold; }
+    #task-section .task-list ul li .trash:hover {
+      color: lightcoral; }
+
+@media (max-width: 490px) {
+  #task-section .add-task {
+    padding: 0.5rem; }
+    #task-section .add-task form {
+      flex-direction: column; }
+      #task-section .add-task form button {
+        margin-top: 0.5rem; }
+  #task-section .task-list {
+    padding: 0.5rem; }
+    #task-section .task-list ul li {
+      word-break: break-all; }
+      #task-section .task-list ul li .star {
+        margin: 0 0.5rem; } }

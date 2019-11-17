@@ -1,0 +1,26 @@
+$main-color: steelblue;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  color: white;
+  background: $main-color;
+  scroll-behavior: smooth;
+  height: 100vh;
+  font-family: "Cutive Mono", monospace;
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

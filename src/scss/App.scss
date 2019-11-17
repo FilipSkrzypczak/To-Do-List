@@ -1,0 +1,120 @@
+@import "index";
+
+#task-section {
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .add-task {
+    border: 2px solid white;
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    padding: 1rem;
+
+    .info {
+      margin-top: 1rem;
+
+      .star {
+        color: gold;
+      }
+      .trash {
+        color: lightcoral;
+      }
+    }
+
+    form {
+      display: flex;
+
+      input {
+        flex-grow: 1;
+        padding: 0.5rem;
+        font-size: 1.15rem;
+
+        &:focus {
+          outline: none;
+          border: 2px solid royalblue;
+        }
+      }
+
+      button {
+        flex-basis: 20%;
+        padding: 0.5rem 1rem;
+        background: limegreen;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: rgb(43, 223, 43);
+          transform: translateY(-8%);
+        }
+      }
+    }
+  }
+
+  .task-list {
+    border: 2px solid white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    ul {
+      li {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 0.7rem;
+        padding: 0.4rem 1rem;
+        background-color: rgb(57, 105, 145);
+        color: white;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: rgb(86, 152, 206);
+        }
+
+        span {
+          flex-grow: 1;
+          cursor: pointer;
+          transition: 0.2s;
+
+          &:hover {
+            color: lime;
+          }
+        }
+
+        span.done {
+          color: lime;
+          text-decoration: line-through;
+          font-weight: lighter !important;
+        }
+
+        i {
+          flex-basis: 5%;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .star {
+          &:hover {
+            color: gold;
+          }
+        }
+
+        .trash {
+          &:hover {
+            color: lightcoral;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "media";

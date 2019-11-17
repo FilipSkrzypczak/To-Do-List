@@ -1,0 +1,28 @@
+@media (max-width: 490px) {
+  #task-section {
+    .add-task {
+      padding: 0.5rem;
+
+      form {
+        flex-direction: column;
+
+        button {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+
+    .task-list {
+      padding: 0.5rem;
+      ul {
+        li {
+          word-break: break-all;
+
+          .star {
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
