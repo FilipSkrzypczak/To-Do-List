@@ -31,7 +31,6 @@ class AddTask extends Component {
 
   componentDidMount() {
     if (JSON.parse(localStorage.getItem("counter"))) {
-      console.log("tak");
       this.counter = JSON.parse(localStorage.getItem("counter"));
       this.setState({
         id: this.counter
