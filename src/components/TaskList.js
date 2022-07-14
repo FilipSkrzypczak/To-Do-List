@@ -17,11 +17,11 @@ const TaskList = props => {
       </span>
       <i
         onClick={() => props.important(task.id)}
-        className="fas fa-star star"
+        className="fa-solid fa-star star"
       ></i>
       <i
         onClick={() => props.delete(task.id)}
-        className="fas fa-trash trash"
+        className="fa-solid fa-trash trash"
       ></i>
     </li>
   ));
