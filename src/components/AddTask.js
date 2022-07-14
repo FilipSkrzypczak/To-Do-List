@@ -52,9 +52,9 @@ class AddTask extends Component {
           <button>Add task</button>
         </form>
         <div className="info">
-          Mark task as important - <i className="fas fa-star star"></i>
+          Mark task as important - <i className="fa-solid fa-star star"></i>
           <br />
-          Delete task from list - <i className="fas fa-trash trash"></i>
+          Delete task from list - <i className="fa-solid fa-trash trash"></i>
         </div>
       </div>
     );
